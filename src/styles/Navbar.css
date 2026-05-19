@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    width: 25%;
+}
+.navbar{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+}
+.nav-links:hover{
+    background-color: lime;
+}
+.nav-links{
+    border-radius: 5px;
+    height: 27px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    background-color:green;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+.nav-links li{
+    font-size: larger;
+    padding: 0.3rem;
+}
+.nav-links a{
+    color: inherit;
+    text-decoration: none;
+}
+.lists{
+    display: flex;
+    gap: 1rem;
+}
