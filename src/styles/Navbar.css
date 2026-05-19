@@ -2,41 +2,25 @@
     padding: 0;
     margin: 0;
 }
-.logo{
-    width: 25%;
-}
-.navbar{
-    height: 12vh;
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: green;
-    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    height: 12vh;
+    position:sticky;
+    top: 0;
 }
-.nav-links:hover{
-    background-color: lime;
-}
-.nav-links{
-    border-radius: 5px;
-    height: 27px;
-    list-style: none;
+ul{
     display: flex;
-    gap: 1rem;
-    background-color:green;
-    border: none;
-    text-align: center;
-    color: white;
-}
-
-.nav-links li{
-    font-size: larger;
-    padding: 0.3rem;
-}
-.nav-links a{
-    color: inherit;
+    gap: 40px;
     text-decoration: none;
 }
-.lists{
-    display: flex;
-    gap: 1rem;
+button{
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
