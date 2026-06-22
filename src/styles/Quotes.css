@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: radial-gradient(circle at bottom, #ff0000, #00ff00);
+}
+.quote-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 640px;
+}
+.cont {
+  width: 100%;
+}
+.quote-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.quote-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.2);
+}
+.quote-card h3 {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.quote-author {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+.quote-index {
+  margin-top: 12px;
+  color: #666;
+  font-size: 0.95rem;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+}
+.controls button {
+  min-width: 52px;
+  min-height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: #000000cc;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.controls button:hover {
+  background: #222;
+}
+.indicators {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.dot.active {
+  background: white;
+  transform: scale(1.15);
+}

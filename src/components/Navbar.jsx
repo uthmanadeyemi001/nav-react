@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
+  const[Names, setNames] = useState([
+
+  ])
   return (
     <header className="navbar">
       
@@ -10,17 +14,21 @@ const Navbar = () => {
         <ul className="lists">
           
           <li className="nav-links">
-            <a href="#">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="nav-links">
-            <a href="#">Stories</a>
+            <NavLink to="/stories">Stories</NavLink>
           </li>
           <li className="nav-links">
-            <a href="#">Movies</a>
+            <NavLink to="/movies">Movies</NavLink>
+          </li>
+          <li className="nav-links">
+            <NavLink to="/quotes">Quotes</NavLink>
           </li>
         
         </ul>
-          <button>get started</button>
+        <input onChange={e => setNames(e.target.value)} type="text" />
+          <button>get started, {Names} </button>
       </nav>
     </header>
   );
