@@ -1,10 +1,10 @@
 import React from 'react'
-import Child from './child'
+import Child from './Child'
 
-const Parent = ({currentmovie}) => {
+const Parent = ({currentMovie}) => {
   return (
     <div>
-      <Child currentMovie={currentmovie}/>
+      <Child currentMovie={currentMovie}/>
     </div>
   )
 }
