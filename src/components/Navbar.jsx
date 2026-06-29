@@ -25,6 +25,9 @@ const Navbar = () => {
           <li className="nav-links">
             <NavLink to="/quotes">Quotes</NavLink>
           </li>
+          <li className='nav-links'>
+            <NavLink to="/products">Products</NavLink>
+          </li>
         
         </ul>
         <input onChange={e => setNames(e.target.value)} type="text" />

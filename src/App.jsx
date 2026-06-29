@@ -6,6 +6,8 @@ import Addmovie from "./components/Addmovie";
 import Parent from "./components/Parent";
 import Quotes from "./components/Quotes";
 import Users from "./pages/Users";
+import Signup from "./pages/Signup";
+import { Products } from "./pages/Products";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="/movies" element={<Addmovie />} />
         <Route path="/user" element={<Users />} />
         <Route path="/quotes" element={<Quotes />} />
+      <Route path="/signup" element= {<Signup/>}/>
+      <Route path="/products" element= {<Products/>}/>
       </Routes>
     </>
   );
